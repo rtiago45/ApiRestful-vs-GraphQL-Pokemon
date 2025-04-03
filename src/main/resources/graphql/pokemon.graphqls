@@ -1,0 +1,10 @@
+type Pokemon {
+    name: String
+    height: Int
+    weight: Int
+}
+
+type Query {
+    pokemon(name: String!): Pokemon
+    pokemons(names: [String!]!): [Pokemon]
+}
